@@ -2007,5 +2007,30 @@
         "set":""
       }
     ]
+  },
+  {
+    "type": 1,
+    "title": "Wireshark",
+    "description": "Wireshark is the world’s foremost and widely-used network protocol analyzer.",
+    "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/wireshark-icon.png",
+    "image": "linuxserver/wireshark:latest",
+    "categories": ["Other", "Tools"],
+    "platform": "linux",
+    "ports": [  
+      "80/tcp"
+    ],
+    "volumes": [{"container": "/config"}],
+    "env": [  
+      {  
+        "name":"PUID",
+        "label":"PUID",
+        "set":""
+      },
+      {  
+        "name":"PGID",
+        "label":"PGID",
+        "set":""
+      }
+    ]
   }
 ]
